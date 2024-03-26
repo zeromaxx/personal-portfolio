@@ -13,7 +13,7 @@ export default function Home() {
       <div className="hero-wrapper" id="home">
         <div className="container">
           <div className="row">
-            <div className="offset-1 col-6">
+            <div className="offset-md-1 col-md-6">
               <div className="d-flex align-items-center">
                 <h1 className="d-inline-block mb-3 main-color">
                   Aris Lamprinidis
@@ -76,7 +76,7 @@ export default function Home() {
                 well-developed solutions for their business problems.
               </p>
               <div className="d-flex align-items-center">
-                <a href="!#" className="btn-default">
+                <a href="#contact" className="btn-default">
                   Say Hello
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -190,8 +190,7 @@ export default function Home() {
                 continuous learning to ensure my skills remain cutting-edge and
                 relevant. My goal is to contribute not only my technical
                 expertise but also a spirit of positivity and collaboration to a
-                company, enhancing services to elevate customer
-                satisfaction.
+                company, enhancing services to elevate customer satisfaction.
               </p>
               <a className="btn-white" href="!#">
                 Download Cv
@@ -240,7 +239,7 @@ export default function Home() {
                 will bring to your project.
               </p>
             </div>
-            <div className="col-md-7 offset-1">
+            <div className="col-md-7 offset-md-1">
               <div className="filters">
                 <ul className="m-0 p-0 d-flex ">
                   <li
@@ -360,7 +359,7 @@ export default function Home() {
                     <span className="d-block font-500 mt-2">React</span>
                   </div>
                   <div>
-                    <i class="devicon-php-plain"></i>
+                    <i className="devicon-php-plain"></i>
                     <span className="d-block font-500 mt-2">PHP</span>
                   </div>
                 </div>
@@ -408,31 +407,46 @@ export default function Home() {
           </h1>
           <div className="row">
             <div className="col">
-              <Swiper slidesPerView={3} spaceBetween={30} className="mySwiper">
+              <Swiper
+                className="mySwiper"
+                breakpoints={{
+                  320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                  },
+                  768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                  },
+                }}
+              >
                 <SwiperSlide>
-                  <img src="/images/temp.jpg" alt="swiper-img" />
-                  <h3>Project Name</h3>
+                  <img src="/images/tw-home.png" alt="swiper-img" />
+                  <h3 className="mb-3">Trustweel Leasing</h3>
+                  <p className="font-size-14">
+                    A Simplified Car Leasing Web Platform.
+                  </p>
                   <a href="!#" className="fullbox-link">
                     {" "}
                   </a>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src="/images/temp.jpg" alt="swiper-img" />
-                  <h3>Project Name</h3>
+                  <img src="/images/cyberstore-home.png" alt="swiper-img" />
+                  <h3 className="mb-3">Cyberstore</h3>
+                  <p className="font-size-14">
+                    Cyberstore an e-commerce platform for computer hardware
+                    components.
+                  </p>
                   <a href="!#" className="fullbox-link">
                     {" "}
                   </a>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src="/images/temp.jpg" alt="swiper-img" />
-                  <h3>Project Name</h3>
-                  <a href="!#" className="fullbox-link">
-                    {" "}
-                  </a>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src="/images/temp.jpg" alt="swiper-img" />
-                  <h3>Project Name</h3>
+                  <img src="/images/vc-home.png" alt="swiper-img" />
+                  <h3 className="mb-3">Vetclinic</h3>
+                  <p className="font-size-14">
+                    A Comprehensive Veterinary Appointment Platform.
+                  </p>
                   <a href="!#" className="fullbox-link">
                     {" "}
                   </a>
@@ -446,7 +460,7 @@ export default function Home() {
         <div className="container">
           <div className="content">
             <div className="row justify-content-center">
-              <div className="col-6">
+              <div className="col-lg-6">
                 <h3 className="mb-4 position-relative">
                   Let's work together
                   <svg
@@ -484,25 +498,26 @@ export default function Home() {
                   </svg>
                 </h3>
                 <p>
-                  You can express yourself however you want and whenever you
-                  want, for free. You can customize a template or make your own.
+                  Loved my work and interested in collaborating? I'm just an
+                  email away. Contact me to discuss how we can bring your next
+                  project to life with a unique digital touch.
                 </p>
               </div>
             </div>
           </div>
           <div className="row">
-            <div className="col-md-4">
+            <div className="col-lg-4 mb-lg-0 mb-3">
               <span className="d-block title-name">Call:</span>
               <a href="tel:+306937040151">+30 693 70 40 151</a>
             </div>
-            <div className="col-md-4">
+            <div className="col-lg-4 mb-lg-0 mb-3">
               <span className="d-block title-name">Email:</span>
               <a href="mailto:arislamprinidis@yahoo.com">
                 arislamprinidis@yahoo.com
               </a>
             </div>
-            <div className="col-md-4">
-              <div className="social-links d-flex align-items-center justify-content-end">
+            <div className="col-lg-4 mb-lg-0 mb-3">
+              <div className="social-links d-flex align-items-center justify-content-lg-end">
                 <span className="text-white font-500">Follow me:</span>
                 <ul className="m-0 p-0 d-flex align-items-center">
                   <li className="list-unstyled ms-4">
@@ -578,11 +593,8 @@ export default function Home() {
       <footer>
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-md-6">
-              <h2>Aris</h2>
-            </div>
-            <div className="col-md-6">
-              <div className="text-end font-500">
+            <div className="col-12">
+              <div className="font-500">
                 &copy; 2024 by Aris Lamprinidis. All Rights Reserved
               </div>
             </div>

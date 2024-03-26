@@ -12,6 +12,9 @@ a {
 .font-size-18 {
   font-size: 18px;
 }
+.font-size-14 {
+  font-size: 14px;
+}
 .font-500 {
   font-weight: 500;
 }
@@ -153,7 +156,7 @@ header a {
   scroll-margin-top: 200px;
 }
 .projects-wrapper:target {
-  scroll-margin-top: 100px;
+  scroll-margin-top: 90px;
 }
 .contact-wrapper:target {
   scroll-margin-top: 100px;
@@ -198,24 +201,15 @@ footer {
 }
 
 .letter-a {
-  /* position: absolute; */
-  /* top: 40%;
-  left: 70%; */
   color: var(--main-color);
-  /* transform: translate(-50%, -50%); */
   font-size: 25px;
-  font-family: "Bowlby One SC", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-style: normal;
 }
 .letter-l {
-  /* position: absolute; */
   font-size: 40px;
-  /* bottom: -5px;
-  left: 8px; */
   color: #ffc448;
-  font-family: "Bowlby One SC", sans-serif;
-  font-weight: 300;
+  font-weight: 700;
   font-style: normal;
 }
 .skills-wrapper h1 {
@@ -363,9 +357,10 @@ footer {
 
 .swiper-slide img {
   display: block;
-  width: 100%;
-  min-height: 400px;
+  max-width: 100%;
   object-fit: cover;
+  height: auto;
+  max-height: 535px;
 }
 .projects-wrapper h1 {
   letter-spacing: -2px;
@@ -434,4 +429,54 @@ footer {
   position: absolute;
   top: 0;
   right: 100%;
+}
+@media (max-width: 991px) {
+  header {
+    padding: 0;
+  }
+}
+@media (max-width: 567px) {
+  .hero-wrapper h1,
+  .about-wrapper h1,
+  .skills-wrapper h1,
+  .projects-wrapper h1,
+  .contact-wrapper h3 {
+    font-size: 40px;
+  }
+  .filters ul {
+    flex-direction: column;
+  }
+  .education,
+  .experience,
+  .skillbox {
+    margin-top: 36px;
+  }
+  .about-wrapper {
+    margin-bottom: 60px;
+  }
+  .tab-wrapper {
+    min-height: 250px;
+  }
+  .projects-wrapper {
+    padding: 60px 0 50px;
+  }
+  .contact-wrapper .arrow {
+    position: absolute;
+    top: 0;
+    right: auto;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  .contact-wrapper a {
+    font-size: 16px;
+  }
+  .contact-wrapper {
+    padding: 65px 0 60px;
+  }
+  .contact-wrapper .line {
+    z-index: -1;
+  }
+  .contact-wrapper .content {
+    margin-bottom: 45px;
+  }
 }

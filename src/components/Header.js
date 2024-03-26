@@ -16,13 +16,13 @@ export default function Header() {
     <header className={isScrollValueMoreThanHeaderHeight ? "scrolled" : ""}>
       <div className="container">
         <div className="row">
-          <div className="col-2">
-            <div className="position-relative">
+          <div className="col-lg-2 text-lg-start text-center mb-lg-0 mb-3">
+            <a href="/" className="d-inline-block  position-relative">
               <span className="letter-a">A</span>
-              <span className="letter-l">L</span>
-            </div>
+              <span className="letter-l position-absolute">L</span>
+            </a>
           </div>
-          <div className="col-5 offset-5">
+          <div className="col-lg-5 offset-lg-5">
             <ul className="m-0 p-0 d-flex justify-content-between h-100 align-items-center">
               <li className="list-unstyled">
                 <a className="grey-color" href="#home">
