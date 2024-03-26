@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 export default function Home() {
+  const [activeTab, setActiveTab] = useState("skills");
+  const handleTabClick = (tab) => {
+    setActiveTab(tab);
+  };
   return (
     <>
-      <div className="hero-wrapper">
+      <div className="hero-wrapper" id="home">
         <div className="container">
           <div className="row">
             <div className="offset-1 col-6">
@@ -89,7 +96,7 @@ export default function Home() {
                     ></path>
                   </svg>
                 </a>
-                <a className="simple-button ms-5" href="!#">
+                <a className="simple-button ms-5" href="#projects">
                   My Works
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +104,7 @@ export default function Home() {
                     height="25"
                     viewBox="0 0 24 25"
                     fill="none"
-                    class="svg replaced-svg ms-2"
+                    className="svg replaced-svg ms-2"
                   >
                     <path
                       d="M20.843 4.21239C20.843 3.79817 20.5072 3.46238 20.093 3.46238L13.343 3.46234C12.9288 3.46233 12.593 3.79812 12.593 4.21233C12.593 4.62655 12.9288 4.96233 13.343 4.96234L19.343 4.96238L19.3429 10.9624C19.3429 11.3766 19.6787 11.7124 20.0929 11.7124C20.5072 11.7124 20.8429 11.3766 20.8429 10.9624L20.843 4.21239ZM4.43731 20.9285L20.6233 4.74271L19.5627 3.68205L3.37665 19.8678L4.43731 20.9285Z"
@@ -111,13 +118,21 @@ export default function Home() {
                 <span className="grey-color font-500">Follow me:</span>
                 <ul className="m-0 p-0 d-flex align-items-center">
                   <li className="list-unstyled ms-4">
-                    <a href="!#">
-                      <i class="devicon-github-original colored"></i>
+                    <a
+                      href="https://github.com/zeromaxx?tab=repositories"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <i className="devicon-github-original colored"></i>
                     </a>
                   </li>
                   <li className="list-unstyled ms-4">
-                    <a href="!#">
-                      <i class="devicon-linkedin-plain"></i>
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://www.linkedin.com/in/aris-lamprinidis-aa7b81236/"
+                    >
+                      <i className="devicon-linkedin-plain"></i>
                     </a>
                   </li>
                 </ul>
@@ -126,7 +141,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="about-wrapper">
+      <div className="about-wrapper" id="about">
         <div className="container">
           <div className="row">
             <div className="col-md-6">
@@ -146,7 +161,7 @@ export default function Home() {
                   <path
                     d="M69.0582 4.99535C65.3229 5.61907 55.8542 10.8508 56.4184 19.5008M56.4184 19.5008C56.5793 21.9679 56.8094 25.1691 59.6334 27.5088C62.587 29.9561 68.4982 24.1091 56.4184 19.5008ZM56.4184 19.5008C49.582 17.0957 34.9948 15.9707 31.3373 30.7119C29.092 42.3255 34.8382 56.3213 37.9206 65.5494C30.8166 54.4724 12.9204 41.5234 3.33571 40.3222"
                     stroke="#FED546"
-                    stroke-width="3"
+                    strokeWidth="3"
                   ></path>
                   <path
                     d="M67.8098 9.30162L68.8675 4.76205L64.3162 3.75612L64.6426 2.35513L70.5986 3.67151L69.2144 9.61209L67.8098 9.30162Z"
@@ -155,25 +170,28 @@ export default function Home() {
                   <path
                     d="M26.009 78.4559C26.089 77.1822 26.6883 73.8048 28.4447 70.4841"
                     stroke="#FED546"
-                    stroke-width="3"
+                    strokeWidth="3"
                   ></path>
                   <path
                     d="M4.8413 78.3261C8.24607 74.6684 16.8723 66.8695 24.1393 64.9358"
                     stroke="#FED546"
-                    stroke-width="3"
+                    strokeWidth="3"
                   ></path>
                   <path
                     d="M55.3976 5.34016C53.6747 5.2429 50.2912 8.86138 51.3227 12.4565"
                     stroke="#FED546"
-                    stroke-width="3"
+                    strokeWidth="3"
                   ></path>
                 </svg>
               </h1>
               <p className="mb-5">
-                With 10 years experience as a professional Web developer, I have
-                acquired the skills and knowledge necessary to make your project
-                a success. I enjoy every step of the design process, from
-                discussion and collaboration.
+                As a highly motivated developer with a strong background in
+                creating custom websites using JavaScript and PHP, I prioritize
+                continuous learning to ensure my skills remain cutting-edge and
+                relevant. My goal is to contribute not only my technical
+                expertise but also a spirit of positivity and collaboration to a
+                company, enhancing services to elevate customer
+                satisfaction.
               </p>
               <a className="btn-white" href="!#">
                 Download Cv
@@ -208,7 +226,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="skills-wrapper">
+      <div className="skills-wrapper" id="skills">
         <div className="container">
           <div className="row">
             <div className="col-md-4">
@@ -217,21 +235,27 @@ export default function Home() {
                 <span className="position-relative">areas</span>
               </h1>
               <p className="grey-color font-size-18 font-500">
-                You can express yourself however you want and whenever you want,
-                for free. You can customize a template or make your own from
-                scratch, with an immersive library at your disposal. You can
-                express yourself however you want and whenever you free.
-              </p>
-              <p className="grey-color font-size-18 font-500">
-                You can customize a template or make your own from scratch, with
-                an immersive library at your disposal.
+                I am a creative problem solver. I build fullstack web
+                applications. I have highlighted my key technical skills that I
+                will bring to your project.
               </p>
             </div>
-            <div className="col-md-6 offset-1">
+            <div className="col-md-7 offset-1">
               <div className="filters">
                 <ul className="m-0 p-0 d-flex ">
-                  <li className=" list-unstyled">
-                    <a className="main-color" href="!#">
+                  <li
+                    className={`list-unstyled ${
+                      activeTab === "skills" ? "active" : ""
+                    }`}
+                  >
+                    <a
+                      className="main-color"
+                      href="!#"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleTabClick("skills");
+                      }}
+                    >
                       Skills
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -248,64 +272,319 @@ export default function Home() {
                       </svg>
                     </a>
                   </li>
-                  <li className=" list-unstyled">
-                    <a className="main-color" href="!#">
+                  <li
+                    className={`list-unstyled ${
+                      activeTab === "experience" ? "active" : ""
+                    }`}
+                  >
+                    <a
+                      className="main-color"
+                      href="!#"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleTabClick("experience");
+                      }}
+                    >
                       Experience
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="25"
+                        viewBox="0 0 24 25"
+                        fill="none"
+                        className="ms-3"
+                      >
+                        <path
+                          d="M20.843 4.21239C20.843 3.79817 20.5072 3.46238 20.093 3.46238L13.343 3.46234C12.9288 3.46233 12.593 3.79812 12.593 4.21233C12.593 4.62655 12.9288 4.96233 13.343 4.96234L19.343 4.96238L19.3429 10.9624C19.3429 11.3766 19.6787 11.7124 20.0929 11.7124C20.5072 11.7124 20.8429 11.3766 20.8429 10.9624L20.843 4.21239ZM4.43731 20.9285L20.6233 4.74271L19.5627 3.68205L3.37665 19.8678L4.43731 20.9285Z"
+                          fill="#12141D"
+                        ></path>
+                      </svg>
                     </a>
                   </li>
-                  <li className=" list-unstyled">
-                    <a className="main-color" href="!#">
+                  <li
+                    className={`list-unstyled ${
+                      activeTab === "education" ? "active" : ""
+                    }`}
+                  >
+                    <a
+                      className="main-color"
+                      href="!#"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleTabClick("education");
+                      }}
+                    >
                       Education
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="25"
+                        viewBox="0 0 24 25"
+                        fill="none"
+                        className="ms-3"
+                      >
+                        <path
+                          d="M20.843 4.21239C20.843 3.79817 20.5072 3.46238 20.093 3.46238L13.343 3.46234C12.9288 3.46233 12.593 3.79812 12.593 4.21233C12.593 4.62655 12.9288 4.96233 13.343 4.96234L19.343 4.96238L19.3429 10.9624C19.3429 11.3766 19.6787 11.7124 20.0929 11.7124C20.5072 11.7124 20.8429 11.3766 20.8429 10.9624L20.843 4.21239ZM4.43731 20.9285L20.6233 4.74271L19.5627 3.68205L3.37665 19.8678L4.43731 20.9285Z"
+                          fill="#12141D"
+                        ></path>
+                      </svg>
                     </a>
                   </li>
                 </ul>
               </div>
-              <div className="skillbox">
-                <div>
-                  <i class="devicon-laravel-original colored"></i>
-                  <span className="d-block font-500 mt-2">Laravel</span>
+
+              <div className="tab-wrapper">
+                <div
+                  className={`skillbox ${
+                    activeTab === "skills" ? "active-tab" : ""
+                  }`}
+                >
+                  <div>
+                    <i className="devicon-laravel-original"></i>
+                    <span className="d-block font-500 mt-2">Laravel</span>
+                  </div>
+                  <div>
+                    <i className="devicon-html5-plain"></i>
+                    <span className="d-block font-500 mt-2">Html</span>
+                  </div>
+                  <div>
+                    <i className="devicon-css3-plain"></i>
+                    <span className="d-block font-500 mt-2">Css</span>
+                  </div>
+                  <div>
+                    <i className="devicon-javascript-plain"></i>
+                    <span className="d-block font-500 mt-2">Javascript</span>
+                  </div>
+                  <div>
+                    <i className="devicon-react-original"></i>
+                    <span className="d-block font-500 mt-2">React</span>
+                  </div>
+                  <div>
+                    <i class="devicon-php-plain"></i>
+                    <span className="d-block font-500 mt-2">PHP</span>
+                  </div>
                 </div>
-                <div>
-                  <i class="devicon-html5-plain colored"></i>
-                  <span className="d-block font-500 mt-2">Html</span>
+                <div
+                  className={`experience ${
+                    activeTab === "experience" ? "active-tab" : ""
+                  }`}
+                >
+                  <div className="d-flex flex-column ">
+                    <div className="content">
+                      <div className="year">2023 - Present</div>
+                      <div className="company">The Smiling Hippo</div>
+                    </div>
+                    <h3 className="title">Junior Web Developer</h3>
+                  </div>
                 </div>
-                <div>
-                  <i class="devicon-css3-plain colored"></i>
-                  <span className="d-block font-500 mt-2">Css</span>
-                </div>
-                <div>
-                  <i class="devicon-javascript-plain colored"></i>
-                  <span className="d-block font-500 mt-2">Javascript</span>
-                </div>
-                <div>
-                  <i class="devicon-react-original colored"></i>
-                  <span className="d-block font-500 mt-2">React</span>
+
+                <div
+                  className={`education ${
+                    activeTab === "education" ? "active-tab" : ""
+                  }`}
+                >
+                  <div className="d-flex flex-column ">
+                    <div className="content">
+                      <div className="year">Feb 2022 - Sept 2022</div>
+                      <div className="company">
+                        500 hours of intensive training
+                        <br />
+                        organized by Peoplecert
+                      </div>
+                    </div>
+                    <h3 className="title">Web Development Course</h3>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="projects-wrapper">
+      <div className="projects-wrapper" id="projects">
         <div className="container">
-          <h1>Look at my</h1>
-          <h1>recent projects</h1>
+          <h1>
+            Look at my <br />
+            recent projects
+          </h1>
           <div className="row">
-            <div className="col">swiper goes here</div>
+            <div className="col">
+              <Swiper slidesPerView={3} spaceBetween={30} className="mySwiper">
+                <SwiperSlide>
+                  <img src="/images/temp.jpg" alt="swiper-img" />
+                  <h3>Project Name</h3>
+                  <a href="!#" className="fullbox-link">
+                    {" "}
+                  </a>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/images/temp.jpg" alt="swiper-img" />
+                  <h3>Project Name</h3>
+                  <a href="!#" className="fullbox-link">
+                    {" "}
+                  </a>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/images/temp.jpg" alt="swiper-img" />
+                  <h3>Project Name</h3>
+                  <a href="!#" className="fullbox-link">
+                    {" "}
+                  </a>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/images/temp.jpg" alt="swiper-img" />
+                  <h3>Project Name</h3>
+                  <a href="!#" className="fullbox-link">
+                    {" "}
+                  </a>
+                </SwiperSlide>
+              </Swiper>
+            </div>
           </div>
         </div>
       </div>
-      <div className="contact-wrapper">
-        <div className="container">contact goes here</div>
+      <div className="contact-wrapper position-relative" id="contact">
+        <div className="container">
+          <div className="content">
+            <div className="row justify-content-center">
+              <div className="col-6">
+                <h3 className="mb-4 position-relative">
+                  Let's work together
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="86"
+                    height="84"
+                    viewBox="0 0 86 84"
+                    fill="none"
+                    className="arrow"
+                  >
+                    <path
+                      d="M69.0582 4.99535C65.3229 5.61907 55.8542 10.8508 56.4184 19.5008M56.4184 19.5008C56.5793 21.9679 56.8094 25.1691 59.6334 27.5088C62.587 29.9561 68.4982 24.1091 56.4184 19.5008ZM56.4184 19.5008C49.582 17.0957 34.9948 15.9707 31.3373 30.7119C29.092 42.3255 34.8382 56.3213 37.9206 65.5494C30.8166 54.4724 12.9204 41.5234 3.33571 40.3222"
+                      stroke="#FED546"
+                      strokeWidth="3"
+                    ></path>
+                    <path
+                      d="M67.8098 9.30162L68.8675 4.76205L64.3162 3.75612L64.6426 2.35513L70.5986 3.67151L69.2144 9.61209L67.8098 9.30162Z"
+                      fill="#FED546"
+                    ></path>
+                    <path
+                      d="M26.009 78.4559C26.089 77.1822 26.6883 73.8048 28.4447 70.4841"
+                      stroke="#FED546"
+                      strokeWidth="3"
+                    ></path>
+                    <path
+                      d="M4.8413 78.3261C8.24607 74.6684 16.8723 66.8695 24.1393 64.9358"
+                      stroke="#FED546"
+                      strokeWidth="3"
+                    ></path>
+                    <path
+                      d="M55.3976 5.34016C53.6747 5.2429 50.2912 8.86138 51.3227 12.4565"
+                      stroke="#FED546"
+                      strokeWidth="3"
+                    ></path>
+                  </svg>
+                </h3>
+                <p>
+                  You can express yourself however you want and whenever you
+                  want, for free. You can customize a template or make your own.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-4">
+              <span className="d-block title-name">Call:</span>
+              <a href="tel:+306937040151">+30 693 70 40 151</a>
+            </div>
+            <div className="col-md-4">
+              <span className="d-block title-name">Email:</span>
+              <a href="mailto:arislamprinidis@yahoo.com">
+                arislamprinidis@yahoo.com
+              </a>
+            </div>
+            <div className="col-md-4">
+              <div className="social-links d-flex align-items-center justify-content-end">
+                <span className="text-white font-500">Follow me:</span>
+                <ul className="m-0 p-0 d-flex align-items-center">
+                  <li className="list-unstyled ms-4">
+                    <a
+                      href="https://github.com/zeromaxx?tab=repositories"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <i className="devicon-github-original colored"></i>
+                    </a>
+                  </li>
+                  <li className="list-unstyled ms-4">
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://www.linkedin.com/in/aris-lamprinidis-aa7b81236/"
+                    >
+                      <i className="devicon-linkedin-plain"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="332"
+            height="520"
+            viewBox="0 0 332 520"
+            fill="none"
+            className="line"
+          >
+            <g clipPath="url(#clip0_1_50)">
+              <path
+                d="M136.513 15.5182L134.186 19.2863C132.901 21.3674 130.696 22.7969 128.168 23.0517L123.761 23.4959C122.858 23.587 122.585 24.7761 123.357 25.2529L127.125 27.5797C129.206 28.8647 130.635 31.0697 130.89 33.5984L131.334 38.0046C131.425 38.9076 132.615 39.1813 133.091 38.4093L135.418 34.6412C136.703 32.5601 138.908 31.1307 141.437 30.8758L145.843 30.4315C146.746 30.3405 147.02 29.1513 146.248 28.6746L142.48 26.3478C140.399 25.0628 138.969 22.8578 138.714 20.3292L138.27 15.9228C138.179 15.0198 136.99 14.7462 136.513 15.5182ZM126.746 25.1084L128.358 24.9459C131.37 24.6424 134.154 22.9625 135.806 20.2866L136.657 18.9076L136.82 20.5201C137.124 23.5314 138.803 26.3153 141.479 27.9677L142.858 28.8191L141.246 28.9817C138.235 29.2852 135.451 30.9651 133.798 33.641L132.947 35.02L132.784 33.4075C132.481 30.3962 130.801 27.6123 128.125 25.9599L126.746 25.1084Z"
+                fill="white"
+              ></path>
+            </g>
+            <g clipPath="url(#clip1_1_50)">
+              <path
+                d="M161.479 48.0801L158.28 53.2613C156.513 56.1228 153.481 58.0883 150.004 58.4388L143.945 59.0495C142.704 59.1747 142.327 60.8098 143.389 61.4653L148.57 64.6647C151.432 66.4316 153.397 69.4634 153.748 72.9403L154.358 78.999C154.484 80.2406 156.119 80.6169 156.774 79.5553L159.974 74.3742C161.74 71.5127 164.772 69.5473 168.249 69.1968L174.308 68.586C175.549 68.4608 175.926 66.8257 174.864 66.1701L169.683 62.9708C166.822 61.204 164.856 58.1721 164.506 54.6952L163.895 48.6365C163.77 47.3948 162.134 47.0187 161.479 48.0801ZM148.049 61.2667L150.267 61.0432C154.407 60.6259 158.235 58.316 160.507 54.6367L161.678 52.7406L161.901 54.9578C162.319 59.0983 164.628 62.9262 168.308 65.1981L170.204 66.3689L167.987 66.5924C163.846 67.0098 160.018 69.3197 157.746 72.999L156.575 74.8951L156.352 72.6779C155.935 68.5374 153.625 64.7095 149.945 62.4375L148.049 61.2667Z"
+                fill="#505050"
+              ></path>
+            </g>
+            <path
+              opacity="0.2"
+              d="M138.845 318.378C109.818 297.906 94.7726 308.529 100.486 333.365C106.199 358.2 104.877 404.225 80.5875 376.834C56.298 349.442 18.3022 300.769 23.2166 343.711C39.1156 410.075 43.5192 442.324 -1.86691 387.156C-47.253 331.989 -57.4637 367.683 -35.4315 418.279C-13.3994 468.875 -53.7387 444.843 -69.3516 421.718C-93.3594 384.834 -115.646 391.277 -108.434 419.948C-101.222 448.62 -99.1389 500.324 -128.355 468.603C-157.571 436.881 -190.003 410.73 -183.544 447.137C-177.085 483.543 -165.831 536.086 -191.407 510.922C-211.868 490.791 -214.159 487.364 -212.748 488.166"
+              stroke="white"
+              strokeWidth="3"
+              strokeLinecap="round"
+            ></path>
+            <defs>
+              <clipPath id="clip0_1_50">
+                <rect
+                  width="24.3643"
+                  height="24.3643"
+                  fill="white"
+                  transform="matrix(0.974491 0.224426 0.224426 -0.974491 120.197 36.1023)"
+                ></rect>
+              </clipPath>
+              <clipPath id="clip1_1_50">
+                <rect
+                  width="33.5009"
+                  height="33.5009"
+                  fill="white"
+                  transform="matrix(0.974491 0.224425 0.224427 -0.974491 139.044 76.3831)"
+                ></rect>
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
       </div>
       <footer>
         <div className="container">
-          <div className="row">
+          <div className="row align-items-center">
             <div className="col-md-6">
               <h2>Aris</h2>
             </div>
             <div className="col-md-6">
-              &copy; 2022 by Aris Lamprinidis. All Rights Reserved
+              <div className="text-end font-500">
+                &copy; 2024 by Aris Lamprinidis. All Rights Reserved
+              </div>
             </div>
           </div>
         </div>
