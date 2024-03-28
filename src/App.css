@@ -36,6 +36,15 @@ a {
   word-wrap: break-word;
   transition: all 0.3s ease;
 }
+.btn-black {
+  font-weight: 700;
+  background-color: var(--main-color);
+  border-radius: 16px;
+  font-size: 14px;
+  padding: 8px 16px;
+  color: #fdfdfd;
+  display: inline-block;
+}
 .btn-white {
   text-decoration: none;
   color: var(--main-color);
@@ -441,7 +450,10 @@ footer {
   .skills-wrapper h1,
   .projects-wrapper h1,
   .contact-wrapper h3 {
-    font-size: 40px;
+    font-size: 30px;
+  }
+  .hero-wrapper h1 {
+    letter-spacing: 0;
   }
   .filters ul {
     flex-direction: column;
@@ -479,4 +491,10 @@ footer {
   .contact-wrapper .content {
     margin-bottom: 45px;
   }
+}
+.me-img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 30px;
+  filter: grayscale(85%);
 }

@@ -144,83 +144,95 @@ export default function Home() {
       <div className="about-wrapper" id="about">
         <div className="container">
           <div className="row">
-            <div className="col-md-6">
-              <img src="" alt="" />
+            <div className="col-lg-6">
+              <img src="/images/me2.jpg" alt="me" className="me-img" />
             </div>
-            <div className="col-md-5">
-              <h1 className="mb-4 d-inline-block">
-                About Me
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="86"
-                  height="84"
-                  viewBox="0 0 86 84"
-                  fill="none"
-                  className="arrow"
-                >
-                  <path
-                    d="M69.0582 4.99535C65.3229 5.61907 55.8542 10.8508 56.4184 19.5008M56.4184 19.5008C56.5793 21.9679 56.8094 25.1691 59.6334 27.5088C62.587 29.9561 68.4982 24.1091 56.4184 19.5008ZM56.4184 19.5008C49.582 17.0957 34.9948 15.9707 31.3373 30.7119C29.092 42.3255 34.8382 56.3213 37.9206 65.5494C30.8166 54.4724 12.9204 41.5234 3.33571 40.3222"
-                    stroke="#FED546"
-                    strokeWidth="3"
-                  ></path>
-                  <path
-                    d="M67.8098 9.30162L68.8675 4.76205L64.3162 3.75612L64.6426 2.35513L70.5986 3.67151L69.2144 9.61209L67.8098 9.30162Z"
-                    fill="#FED546"
-                  ></path>
-                  <path
-                    d="M26.009 78.4559C26.089 77.1822 26.6883 73.8048 28.4447 70.4841"
-                    stroke="#FED546"
-                    strokeWidth="3"
-                  ></path>
-                  <path
-                    d="M4.8413 78.3261C8.24607 74.6684 16.8723 66.8695 24.1393 64.9358"
-                    stroke="#FED546"
-                    strokeWidth="3"
-                  ></path>
-                  <path
-                    d="M55.3976 5.34016C53.6747 5.2429 50.2912 8.86138 51.3227 12.4565"
-                    stroke="#FED546"
-                    strokeWidth="3"
-                  ></path>
-                </svg>
-              </h1>
-              <p className="mb-5">
-                As a highly motivated developer with a strong background in
-                creating custom websites using JavaScript and PHP, I prioritize
-                continuous learning to ensure my skills remain cutting-edge and
-                relevant. My goal is to contribute not only my technical
-                expertise but also a spirit of positivity and collaboration to a
-                company, enhancing services to elevate customer satisfaction.
-              </p>
-              <a className="btn-white" href="!#">
-                Download Cv
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                  className="ms-2"
-                  style={{ verticalAlign: "sub" }}
-                >
-                  <path
-                    d="M15.25 22.7502H9.25C3.82 22.7502 1.5 20.4302 1.5 15.0002V9.00024C1.5 3.57024 3.82 1.25024 9.25 1.25024H14.25C14.66 1.25024 15 1.59024 15 2.00024C15 2.41024 14.66 2.75024 14.25 2.75024H9.25C4.64 2.75024 3 4.39024 3 9.00024V15.0002C3 19.6102 4.64 21.2502 9.25 21.2502H15.25C19.86 21.2502 21.5 19.6102 21.5 15.0002V10.0002C21.5 9.59024 21.84 9.25024 22.25 9.25024C22.66 9.25024 23 9.59024 23 10.0002V15.0002C23 20.4302 20.68 22.7502 15.25 22.7502Z"
-                    fill="#12141D"
-                  ></path>
-                  <path
-                    d="M22.25 10.7502H18.25C14.83 10.7502 13.5 9.42023 13.5 6.00023V2.00023C13.5 1.70023 13.68 1.42023 13.96 1.31023C14.24 1.19023 14.56 1.26023 14.78 1.47023L22.78 9.47023C22.99 9.68023 23.06 10.0102 22.94 10.2902C22.82 10.5702 22.55 10.7502 22.25 10.7502ZM15 3.81023V6.00023C15 8.58023 15.67 9.25023 18.25 9.25023H20.44L15 3.81023Z"
-                    fill="#12141D"
-                  ></path>
-                  <path
-                    d="M13.25 13.7502H7.25C6.84 13.7502 6.5 13.4102 6.5 13.0002C6.5 12.5902 6.84 12.2502 7.25 12.2502H13.25C13.66 12.2502 14 12.5902 14 13.0002C14 13.4102 13.66 13.7502 13.25 13.7502Z"
-                    fill="#12141D"
-                  ></path>
-                  <path
-                    d="M11.25 17.7502H7.25C6.84 17.7502 6.5 17.4102 6.5 17.0002C6.5 16.5902 6.84 16.2502 7.25 16.2502H11.25C11.66 16.2502 12 16.5902 12 17.0002C12 17.4102 11.66 17.7502 11.25 17.7502Z"
-                    fill="#12141D"
-                  ></path>
-                </svg>
-              </a>
+            <div className="col-lg-5">
+              <div className="content h-100 d-flex flex-column justify-content-center">
+                <div>
+                  <h1 className="mb-4 d-inline-block mt-lg-0 mt-4">
+                    About Me
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="86"
+                      height="84"
+                      viewBox="0 0 86 84"
+                      fill="none"
+                      className="arrow"
+                    >
+                      <path
+                        d="M69.0582 4.99535C65.3229 5.61907 55.8542 10.8508 56.4184 19.5008M56.4184 19.5008C56.5793 21.9679 56.8094 25.1691 59.6334 27.5088C62.587 29.9561 68.4982 24.1091 56.4184 19.5008ZM56.4184 19.5008C49.582 17.0957 34.9948 15.9707 31.3373 30.7119C29.092 42.3255 34.8382 56.3213 37.9206 65.5494C30.8166 54.4724 12.9204 41.5234 3.33571 40.3222"
+                        stroke="#FED546"
+                        strokeWidth="3"
+                      ></path>
+                      <path
+                        d="M67.8098 9.30162L68.8675 4.76205L64.3162 3.75612L64.6426 2.35513L70.5986 3.67151L69.2144 9.61209L67.8098 9.30162Z"
+                        fill="#FED546"
+                      ></path>
+                      <path
+                        d="M26.009 78.4559C26.089 77.1822 26.6883 73.8048 28.4447 70.4841"
+                        stroke="#FED546"
+                        strokeWidth="3"
+                      ></path>
+                      <path
+                        d="M4.8413 78.3261C8.24607 74.6684 16.8723 66.8695 24.1393 64.9358"
+                        stroke="#FED546"
+                        strokeWidth="3"
+                      ></path>
+                      <path
+                        d="M55.3976 5.34016C53.6747 5.2429 50.2912 8.86138 51.3227 12.4565"
+                        stroke="#FED546"
+                        strokeWidth="3"
+                      ></path>
+                    </svg>
+                  </h1>
+                </div>
+                <p className="mb-5">
+                  As a highly motivated developer with a strong background in
+                  creating custom websites using JavaScript and PHP, I
+                  prioritize continuous learning to ensure my skills remain
+                  cutting-edge and relevant. My goal is to contribute not only
+                  my technical expertise but also a spirit of positivity and
+                  collaboration to a company, enhancing services to elevate
+                  customer satisfaction.
+                </p>
+                <div>
+                  <a
+                    className="btn-white"
+                    target="_blank"
+                    rel="noreferrer"
+                    href="/images/Aris-Lamprinidis-Resume.pdf"
+                  >
+                    Download Cv
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                      className="ms-2"
+                      style={{ verticalAlign: "sub" }}
+                    >
+                      <path
+                        d="M15.25 22.7502H9.25C3.82 22.7502 1.5 20.4302 1.5 15.0002V9.00024C1.5 3.57024 3.82 1.25024 9.25 1.25024H14.25C14.66 1.25024 15 1.59024 15 2.00024C15 2.41024 14.66 2.75024 14.25 2.75024H9.25C4.64 2.75024 3 4.39024 3 9.00024V15.0002C3 19.6102 4.64 21.2502 9.25 21.2502H15.25C19.86 21.2502 21.5 19.6102 21.5 15.0002V10.0002C21.5 9.59024 21.84 9.25024 22.25 9.25024C22.66 9.25024 23 9.59024 23 10.0002V15.0002C23 20.4302 20.68 22.7502 15.25 22.7502Z"
+                        fill="#12141D"
+                      ></path>
+                      <path
+                        d="M22.25 10.7502H18.25C14.83 10.7502 13.5 9.42023 13.5 6.00023V2.00023C13.5 1.70023 13.68 1.42023 13.96 1.31023C14.24 1.19023 14.56 1.26023 14.78 1.47023L22.78 9.47023C22.99 9.68023 23.06 10.0102 22.94 10.2902C22.82 10.5702 22.55 10.7502 22.25 10.7502ZM15 3.81023V6.00023C15 8.58023 15.67 9.25023 18.25 9.25023H20.44L15 3.81023Z"
+                        fill="#12141D"
+                      ></path>
+                      <path
+                        d="M13.25 13.7502H7.25C6.84 13.7502 6.5 13.4102 6.5 13.0002C6.5 12.5902 6.84 12.2502 7.25 12.2502H13.25C13.66 12.2502 14 12.5902 14 13.0002C14 13.4102 13.66 13.7502 13.25 13.7502Z"
+                        fill="#12141D"
+                      ></path>
+                      <path
+                        d="M11.25 17.7502H7.25C6.84 17.7502 6.5 17.4102 6.5 17.0002C6.5 16.5902 6.84 16.2502 7.25 16.2502H11.25C11.66 16.2502 12 16.5902 12 17.0002C12 17.4102 11.66 17.7502 11.25 17.7502Z"
+                        fill="#12141D"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -234,9 +246,9 @@ export default function Home() {
                 <span className="position-relative">areas</span>
               </h1>
               <p className="grey-color font-size-18 font-500">
-                I am a creative problem solver. I build fullstack web
-                applications. I have highlighted my key technical skills that I
-                will bring to your project.
+                I excel as a creative problem solver with a knack for crafting
+                full-stack web applications. I've outlined the key technical
+                proficiencies I'm ready to bring to your project.
               </p>
             </div>
             <div className="col-md-7 offset-md-1">
@@ -426,9 +438,16 @@ export default function Home() {
                   <p className="font-size-14">
                     A Simplified Car Leasing Web Platform.
                   </p>
-                  <a href="!#" className="fullbox-link">
-                    {" "}
-                  </a>
+                  <div>
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://trustweelleasing-production.up.railway.app/"
+                      className="btn-black mt-4"
+                    >
+                      Live Demo
+                    </a>
+                  </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <img src="/images/cyberstore-home.png" alt="swiper-img" />
@@ -437,9 +456,16 @@ export default function Home() {
                     Cyberstore an e-commerce platform for computer hardware
                     components.
                   </p>
-                  <a href="!#" className="fullbox-link">
-                    {" "}
-                  </a>
+                  <div>
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://cyberstore-laravel-production.up.railway.app/"
+                      className="btn-black mt-2"
+                    >
+                      Live Demo
+                    </a>
+                  </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <img src="/images/vc-home.png" alt="swiper-img" />
@@ -447,9 +473,16 @@ export default function Home() {
                   <p className="font-size-14">
                     A Comprehensive Veterinary Appointment Platform.
                   </p>
-                  <a href="!#" className="fullbox-link">
-                    {" "}
-                  </a>
+                  <div>
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://github.com/zeromaxx/Vetclinic"
+                      className="btn-black mt-4"
+                    >
+                      Check it on Github
+                    </a>
+                  </div>
                 </SwiperSlide>
               </Swiper>
             </div>
