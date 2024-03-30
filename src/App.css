@@ -44,6 +44,10 @@ a {
   padding: 8px 16px;
   color: #fdfdfd;
   display: inline-block;
+  transition: opacity 0.3s ease-in;
+}
+.btn-black:hover {
+  opacity: 0.9;
 }
 .btn-white {
   text-decoration: none;
@@ -497,4 +501,10 @@ footer {
   max-width: 480px;
   border-radius: 30px;
   filter: grayscale(85%);
+}
+.devicon-github-original-wordmark {
+  font-size: 40px;
+  vertical-align: bottom;
+  margin-left: 20px;
+  color: var(--main-color);
 }

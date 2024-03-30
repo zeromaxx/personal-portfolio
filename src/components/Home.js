@@ -435,9 +435,16 @@ export default function Home() {
                 <SwiperSlide>
                   <img src="/images/tw-home.png" alt="swiper-img" />
                   <h3 className="mb-3">Trustweel Leasing</h3>
-                  <p className="font-size-14">
-                    A Simplified Car Leasing Web Platform.
+                  <p className="font-size-14 grey-color">
+                    A Simplified Car Leasing Web Platform, designed for
+                    user-friendly navigation and streamlined leasing processes.
                   </p>
+                  <div className="technologies">
+                    <h6>Technologies</h6>
+                    <p className="font-size-14">
+                      React, Laravel, Scss, Bootstrap, Html, MYSQL
+                    </p>
+                  </div>
                   <div>
                     <a
                       target="_blank"
@@ -447,40 +454,68 @@ export default function Home() {
                     >
                       Live Demo
                     </a>
+                    <a
+                      href="https://github.com/zeromaxx/trustweel_leasing"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {" "}
+                      <i class="devicon-github-original-wordmark"></i>
+                    </a>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <img src="/images/cyberstore-home.png" alt="swiper-img" />
                   <h3 className="mb-3">Cyberstore</h3>
-                  <p className="font-size-14">
+                  <p className="font-size-14 grey-color">
                     Cyberstore an e-commerce platform for computer hardware
                     components.
                   </p>
+                  <div className="technologies">
+                    <h6>Technologies</h6>
+                    <p className="font-size-14">
+                      Html, CSS, Javascript, Laravel, Jquery, MYSQL
+                    </p>
+                  </div>
                   <div>
                     <a
                       target="_blank"
                       rel="noreferrer"
                       href="https://cyberstore-laravel-production.up.railway.app/"
-                      className="btn-black mt-2"
+                      className="btn-black mt-4"
                     >
                       Live Demo
+                    </a>
+                    <a
+                      href="https://github.com/zeromaxx/Cyberstore-Laravel-"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {" "}
+                      <i class="devicon-github-original-wordmark"></i>
                     </a>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <img src="/images/vc-home.png" alt="swiper-img" />
                   <h3 className="mb-3">Vetclinic</h3>
-                  <p className="font-size-14">
-                    A Comprehensive Veterinary Appointment Platform.
+                  <p className="font-size-14 grey-color">
+                    A Comprehensive Veterinary Appointment Platform Solution.
                   </p>
-                  <div>
+                  <div className="technologies">
+                    <h6>Technologies</h6>
+                    <p className="font-size-14">
+                      Laravel, Html, Bootstrap, Jquery, Javascript, PHP, MYSQL
+                    </p>
+                  </div>
+                  <div className="mt-4">
                     <a
+                      href="https://github.com/zeromaxx/Vetclinic"
                       target="_blank"
                       rel="noreferrer"
-                      href="https://github.com/zeromaxx/Vetclinic"
-                      className="btn-black mt-4"
                     >
-                      Check it on Github
+                      {" "}
+                      <i class="devicon-github-original-wordmark ms-0"></i>
                     </a>
                   </div>
                 </SwiperSlide>
